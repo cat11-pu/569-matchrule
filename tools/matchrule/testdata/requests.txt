@@ -1,0 +1,18 @@
+GET /ping
+POST /login h=content-type:application/json x=7b2275736572223a22616461222c227077223a2278227d
+POST /login h=content-type:application/json x=7b2275736572223a22616461222c227077223a2278227d
+POST /login h=content-type:application/json x=7b2275736572223a22616461222c227077223a2278227d
+POST /login h=content-type:text/plain x=7b2275736572223a22616461222c227077223a2278227d
+GET /api/items
+GET /api/items
+GET /api/items
+GET /api/items
+PUT /api/items x=7b2276223a317d
+PUT /api/items x=7b2276223a327d
+GET /static/app.js
+GET /v1/health
+GET /v1/health
+POST /upload h=x-token:abcdef x=70696e673f
+POST /probe x=70696e673f
+DELETE /nope
+GET /nowhere

@@ -1,0 +1,13 @@
+rule ping GET =/ping p=9 s=200
+rule login POST =/login h=content-type:application/json b=2109c0c5186f57b2 u=1 s=201 p=8
+rule api_get GET ^/api/ u=1 s=200 p=5
+rule api_any GET ^/api/ p=1 s=200
+rule api_put PUT ^/api/ b=afbf9d0f3560b0fd u=1 s=204 p=5
+rule static_js GET ~/static/?.js p=1 s=200
+rule health_any GET ^/v1/health u=2 p=3 s=200
+rule health_v1 GET ~/v1/health p=6 s=202
+rule upload POST ^/upload h=x-token:abcdef u=1 p=4 s=201
+rule probe POST =/probe b=e380a9309781b11e p=2 s=200
+rule drop - =/nope p=2 s=418
+rule empty_uses GET =/nowhere u=
+rule bad_method get =/x p=1
